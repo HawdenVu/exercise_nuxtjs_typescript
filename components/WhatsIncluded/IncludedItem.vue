@@ -38,6 +38,10 @@ export default {
       type: Array,
       default: []
     },
+    coverDetailsContentArgList: {
+      type: Array,
+      default: []
+    }
   },
   setup(props: any) {
     const {
@@ -45,6 +49,7 @@ export default {
       coverDetailsTitle,
       compareValue,
       coverDetailsContentList,
+      coverDetailsContentArgList
     } = props
 
     return {
@@ -52,6 +57,7 @@ export default {
       coverDetailsTitle,
       compareValue,
       coverDetailsContentList,
+      coverDetailsContentArgList
     }
   }
 }

@@ -6,6 +6,7 @@
         :coverDetailsTitle="item.coverDetailsTitle"
         :compareValue="item.compareValue"
         :coverDetailsContentList="item.coverDetailsContentList"
+        :coverDetailsContentArgList="item.coverDetailsContentArgList"
       />
     </div>
   </div>

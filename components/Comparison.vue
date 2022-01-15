@@ -124,7 +124,7 @@ export default {
     return { list, compareTarget }
   },
   methods: {
-    searchCompareValue(target: any, titleSearch: String) {
+    searchCompareValue(target: any, titleSearch: String): any {
       const data = target.find((item: any) => item.coverDetailsTitle === titleSearch)
       if (data && data !== undefined) {
         return Number(data.compareValue).toLocaleString('vi-VN')
