@@ -11,7 +11,7 @@
         </div>
         <ul class="content">
           <li v-for="(item, index) in coverDetailsContentList" :key="index">
-            {{ item }}
+            {{ replaceArg(item) }}
           </li>
         </ul>
       </v-col>
@@ -52,12 +52,25 @@ export default {
       coverDetailsContentArgList
     } = props
 
+    function replaceArg(text: String): String {
+      if (text.indexOf("[arg") !== -1) {
+        const idAt = text.indexOf("[arg") + 4;
+        const id = Number(text.slice(idAt, idAt + 1))
+        const target = "[arg" + id + "]"
+        const textReplace = coverDetailsContentArgList[id - 1] || target
+        return text.replace(target, textReplace)
+      } else {
+        return text
+      }
+    }
+
     return {
       coverDetailsImageLink,
       coverDetailsTitle,
       compareValue,
       coverDetailsContentList,
-      coverDetailsContentArgList
+      coverDetailsContentArgList,
+      replaceArg,
     }
   }
 }
