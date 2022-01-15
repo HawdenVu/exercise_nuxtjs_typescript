@@ -1,0 +1,1116 @@
+[
+  {
+    "id": "9",
+    "date": "2022-01-07T02:21:28",
+    "isEffective": true,
+    "gender": "male|female",
+    "insurerKey": "BMI",
+    "categoryCode": "LH_HE",
+    "categoryNameEn": "Health Care",
+    "categoryNameVi": "Bảo hiểm sức khỏe",
+    "subCategoryCode": "LH_HE-PH",
+    "subCategoryNameEn": "Personal Health",
+    "subCategoryNameVi": "Bảo hiểm sức khỏe cá nhân",
+    "productCode": "LH_HE-PH-SHE",
+    "productId": "LH_HE-PH-101",
+    "productNameEn": "Single Health",
+    "productNameVi": "Bảo hiểm sức khỏe cá nhân",
+    "planCode": "LH_HE-PH-SHE-001",
+    "planId": "LH_HE-PH-101-01",
+    "planNameEn": "Basic",
+    "planNameVi": "Cơ bản",
+    "premium": 1085000,
+    "sumInsured": 64500000,
+    "minInsured": "1",
+    "insuredPeriod": "12",
+    "tenor": "30",
+    "paymentMethod": "cash|payoo|fecrc",
+    "tags": "",
+    "firstInstallment": "2",
+    "productRules": [
+      {
+        "ruleId": "age"
+      }
+    ],
+    "claimQuestions": {
+      "vi": [
+        {
+          "id": "LH_HE-PH-10001-001_q1",
+          "question": "Người được bảo hiểm có tiền sử hoặc đang mắc bệnh tâm thần, bệnh ung thư, bệnh phong hay không?",
+          "terms": [],
+          "expectedAnswer": "Không",
+          "validAnswers": ["Có", "Không"]
+        },
+        {
+          "id": "LH_HE-PH-10001-001_q2",
+          "question": "Người được bảo hiểm có bị thương tật vĩnh viễn từ 50% trở lên hay không?",
+          "terms": [],
+          "expectedAnswer": "Có",
+          "validAnswers": ["Có", "Không"]
+        },
+        {
+          "id": "LH_HE-PH-10001-001_q3",
+          "question": "Người được bảo hiểm có đang trong quá trình điều trị bệnh và thương tật hay không?",
+          "terms": [],
+          "expectedAnswer": "Không",
+          "validAnswers": ["Có", "Không"]
+        }
+      ],
+      "en": [
+        {
+          "id": "LH_HE-PH-10001-001_q1",
+          "question": "Is the insured suffering from mental illness, cancer, leukemia?",
+          "terms": [],
+          "expectedAnswer": "No",
+          "validAnswers": ["Yes", "No"]
+        },
+        {
+          "id": "LH_HE-PH-10001-001_q2",
+          "question": "Is the insured permanently disabled by 50% or more?",
+          "terms": [],
+          "expectedAnswer": "No",
+          "validAnswers": ["Yes", "No"]
+        },
+        {
+          "id": "LH_HE-PH-10001-001_q3",
+          "question": "Is the insured in the process of being treated for illness and injury?",
+          "terms": [],
+          "expectedAnswer": "No",
+          "validAnswers": ["Yes", "No"]
+        }
+      ]
+    },
+    "shortPlanDetails": {
+      "vi": {
+        "catTitle": null,
+        "catDescription": null,
+        "catImageLink": null,
+        "subCatTitle": null,
+        "subCatDescription": null,
+        "subCatImageLink": null,
+        "productTitle": null,
+        "productDescription": null,
+        "productImageLink": null,
+        "planDetailsTitle": "Cơ bản",
+        "planDetailsImageLink": "/link/to",
+        "planDetailsDescription": "Cơ bảnplanDetailsDescription",
+        "shortDetailsHeaderList": [
+          "Phí bảo hiểm",
+          "Giá trị bảo vệ",
+          "Tử vong",
+          "Thương tật",
+          "Điều trị nội trú",
+          "Điều trị ngoại trú",
+          "Trợ cấp mất giảm thu nhập"
+        ],
+        "shortDetailsContentList": [
+          "[arg1] VNĐ",
+          "[arg1] VNĐ",
+          "[arg1] VNĐ",
+          " Upto [arg1] VNĐ",
+          "Tây phương [arg1] VNĐ/day | Đông phương [arg2] VNĐ/day",
+          "[arg1] VNĐ/visit",
+          "[arg1] VNĐ/day"
+        ],
+        "shortDetailsContentArgList": [
+          "1085000",
+          "64500000",
+          "50000000",
+          "50000000",
+          "250000|150000",
+          "2500000",
+          "200000"
+        ]
+      },
+      "en": {
+        "catTitle": null,
+        "catDescription": null,
+        "catImageLink": null,
+        "subCatTitle": null,
+        "subCatDescription": null,
+        "subCatImageLink": null,
+        "productTitle": null,
+        "productDescription": null,
+        "productImageLink": null,
+        "planDetailsTitle": "Basic",
+        "planDetailsImageLink": "/link/to",
+        "planDetailsDescription": "BasicplanDetailsDescription",
+        "shortDetailsHeaderList": [
+          "Premium fee",
+          "Sum insured",
+          "Death",
+          "Disability",
+          "Inpatient",
+          "Outpatient",
+          "Income loss allowance"
+        ],
+        "shortDetailsContentList": [
+          "[arg1] VNĐ",
+          "[arg1] VNĐ",
+          "[arg1] VNĐ",
+          " Upto [arg1] VNĐ",
+          "Western [arg1] VNĐ/day | Eastern [arg2] VNĐ/day",
+          "[arg1] VNĐ/visit",
+          "[arg1] VNĐ/day"
+        ],
+        "shortDetailsContentArgList": [
+          "1085000",
+          "64500000",
+          "50000000",
+          "50000000",
+          "250000|150000",
+          "2500000",
+          "200000"
+        ]
+      }
+    },
+    "planDetails": {
+      "vi": {
+        "catTitle": null,
+        "catDescription": null,
+        "catImageLink": null,
+        "subCatTitle": null,
+        "subCatDescription": null,
+        "subCatImageLink": null,
+        "productTitle": null,
+        "productDescription": null,
+        "productImageLink": null,
+        "planDetailsTitle": "Cơ bản",
+        "planDetailsImageLink": "/link/to",
+        "planDetailsDescription": "Cơ bảnplanDetailsDescription",
+        "whatIncluded": {
+          "whatIncludedTittle": "Quyền lợi bảo hiểm",
+          "whatIncludedDescription": "",
+          "whatIncludedImageLInk": "",
+          "list": [
+            {
+              "coverDetailsTitle": "Tử vong do ốm đau, bệnh tật, thai sản",
+              "coverDetailsDescription": "",
+              "coverDetailsImageLink": "/link/to",
+              "coverDetailsContentList": ["[arg1] Tối đa chi trả/ năm"],
+              "coverDetailsContentArgList": ["50000000"],
+              "compareValue": "50000000"
+            },
+            {
+              "coverDetailsTitle": "Thương tật toàn bộ vĩnh viễn do ốm đau, bệnh tật",
+              "coverDetailsDescription": "",
+              "coverDetailsImageLink": "/link/to",
+              "coverDetailsContentList": ["[arg1] Tối đa chi trả/ năm"],
+              "coverDetailsContentArgList": ["50000000"],
+              "compareValue": "50000000"
+            },
+            {
+              "coverDetailsTitle": "Tử vong do tai nạn",
+              "coverDetailsDescription": "",
+              "coverDetailsImageLink": "/link/to",
+              "coverDetailsContentList": ["[arg1] Tối đa chi trả/ năm"],
+              "coverDetailsContentArgList": ["50000000"],
+              "compareValue": "50000000"
+            },
+            {
+              "coverDetailsTitle": "Thương tật toàn bộ vĩnh viễn do tai nạn",
+              "coverDetailsDescription": "",
+              "coverDetailsImageLink": "/link/to",
+              "coverDetailsContentList": ["[arg1] Tối đa chi trả/ năm"],
+              "coverDetailsContentArgList": ["50000000"],
+              "compareValue": "50000000"
+            },
+            {
+              "coverDetailsTitle": "Thương tật bộ phận vĩnh viễn do tai nạn",
+              "coverDetailsDescription": "",
+              "coverDetailsImageLink": "/link/to",
+              "coverDetailsContentList": ["[arg1] Tối đa chi trả/ năm"],
+              "coverDetailsContentArgList": ["50000000"],
+              "compareValue": "50000000"
+            },
+            {
+              "coverDetailsTitle": "Thương tật tạm thời do tai nạn",
+              "coverDetailsDescription": "",
+              "coverDetailsImageLink": "/link/to",
+              "coverDetailsContentList": [
+                "Chi trả theo chi phí thực tế",
+                "Tối đa theo % bảng tỉ lệ thương tật",
+                "Tối đa chi trả/ năm"
+              ],
+              "coverDetailsContentArgList": ["", "", ""],
+              "compareValue": "50000000"
+            },
+            {
+              "coverDetailsTitle": "Điều trị nội trú",
+              "coverDetailsDescription": "Chi trả theo chi phí thực tế",
+              "coverDetailsImageLink": "/link/to",
+              "coverDetailsContentList": [
+                "Nằm viện Tây Y [arg1] Giới hạn chi trả/ ngày |  Tối đa 60 ngày/năm",
+                "Nằm viện Đông Y [arg1] Giới hạn chi trả/ ngày |  Tối đa 120 ngày/năm",
+                "Phẫu thuật [arg1] Tối đa chi trả/ năm"
+              ],
+              "coverDetailsContentArgList": ["250000", "150000", "50000000"],
+              "compareValue": "50000000"
+            },
+            {
+              "coverDetailsTitle": "Điều trị ngoại trú",
+              "coverDetailsDescription": "",
+              "coverDetailsImageLink": "/link/to",
+              "coverDetailsContentList": [
+                "Tối đa [arg1]/lần khám",
+                "Tối đa 5 lần/ năm"
+              ],
+              "coverDetailsContentArgList": ["2500000", ""],
+              "compareValue": "2500000"
+            },
+            {
+              "coverDetailsTitle": "Trợ cấp mất giảm thu nhập",
+              "coverDetailsDescription": "",
+              "coverDetailsImageLink": "/link/to",
+              "coverDetailsContentList": [
+                "Tối đa 60 ngày/năm",
+                "Chi trả từ ngày 03 trở đi",
+                "Giới hạn chi trả/ ngày"
+              ],
+              "coverDetailsContentArgList": ["", "", ""],
+              "compareValue": "200000"
+            }
+          ]
+        },
+        "exclusionDetails": [
+          {
+            "exclusionDetailsTitle": "Điều khoản loại trừ",
+            "exclusionDetailsDescription": "",
+            "exclusionDetailsImageLink": "/link/to",
+            "exclusionDetailsDocTittle": "View full exclusion information →",
+            "exclusionDetailsDocDescription": "",
+            "exclusionDetailsDocLink": "/link/to",
+            "exclusionDetailsContentList": [
+              "1. Hành động cố ý gây thiệt hại của người được bảo hiểm (NĐBH) hoặc người thừa kế hợp pháp của NĐBH.",
+              "2. NĐBH cố ý vi phạm pháp luật, nội quy, quy định của chính quyền địa phương hoặc các tổ chức xã hội. Và bất kỳ hành động cố ý phạm pháp hoặc ẩu đả của NĐBH, trừ khi là hành động cứu người, bảo vệ tài sản hoặc tự vệ.",
+              "3. NĐBH bị tác động bởi chất kích thích, chất gây nghiện, thuốc cai nghiện, thuốc không được bác sĩ...."
+            ],
+            "exclusionDetailsContentArgList": ["", "", ""]
+          }
+        ],
+        "waitingPeriod": [
+          {
+            "waitingPeriodTitle": "Thời gian chờ",
+            "waitingPeriodDescription": "Thời gian chờ Thời gian từ lúc ký hợp đồng đến khi các quyền lợi bảo hiểm có hiệu lực",
+            "waitingPeriodImageLink": "/link/to",
+            "list": [
+              {
+                "termTitle": "0 ngày",
+                "termDescription": "Tai nạn",
+                "termImageLink": "",
+                "coverDetailsContentList": [],
+                "coverDetailsContentArgList": []
+              },
+              {
+                "termTitle": "30 ngày",
+                "termDescription": "Điều trị do ốm đau, bệnh tật thông thường",
+                "termImageLink": "",
+                "coverDetailsContentList": [],
+                "coverDetailsContentArgList": []
+              },
+              {
+                "termTitle": "90 ngày",
+                "termDescription": "Điều trị biến chứng thai sản",
+                "termImageLink": "",
+                "coverDetailsContentList": [],
+                "coverDetailsContentArgList": []
+              },
+              {
+                "termTitle": "270 ngày",
+                "termDescription": "Sinh đẻ",
+                "termImageLink": "",
+                "coverDetailsContentList": [],
+                "coverDetailsContentArgList": []
+              },
+              {
+                "termTitle": "365 ngày",
+                "termDescription": "Tử vong và điều trị do bệnh đặc biệt và bệnh có sẵn",
+                "termImageLink": "",
+                "coverDetailsContentList": [],
+                "coverDetailsContentArgList": []
+              }
+            ]
+          }
+        ],
+        "planNotice": [
+          {
+            "planNoticeTitle": "Lưu ý",
+            "planNoticeDescription": "",
+            "planNoticeImageLink": "",
+            "planNoticeContentList": [
+              "1. Đối với hợp đồng tái tục cùng hạn mức với hợp đồng trước đó, không áp dụng thời gian chờ.",
+              "2. Đối với Hợp đồng tái tục từ gói thấp sang gói cao áp dụng thời gian chờ là 30 ngày kể từ ngày Hợp đồng tái tục có hiệu lực."
+            ],
+            "planNoticeArgList": ["", ""]
+          }
+        ],
+        "policyPrinciple": [
+          {
+            "policyPrincipleTitle": "",
+            "policyPrincipleDescription": "",
+            "policyPrincipleImageLink": "",
+            "policyPrincipleDocTittle": "View full Policy Principles",
+            "policyPrincipleDocDescription": "",
+            "policyPrincipleDocLink": "/link/to"
+          }
+        ]
+      },
+      "en": {
+        "catTitle": null,
+        "catDescription": null,
+        "catImageLink": null,
+        "subCatTitle": null,
+        "subCatDescription": null,
+        "subCatImageLink": null,
+        "productTitle": null,
+        "productDescription": null,
+        "productImageLink": null,
+        "planDetailsTitle": "Basic",
+        "planDetailsImageLink": "/link/to",
+        "planDetailsDescription": "BasicplanDetailsDescription",
+        "whatIncluded": {
+          "whatIncludedTittle": "What’s included",
+          "whatIncludedDescription": "",
+          "whatIncludedImageLInk": "",
+          "list": [
+            {
+              "coverDetailsTitle": "Death due to illness, diseases, maternity",
+              "coverDetailsDescription": "",
+              "coverDetailsImageLink": "/link/to",
+              "coverDetailsContentList": ["[arg1] VNĐ Max payout/ year"],
+              "coverDetailsContentArgList": ["50000000"],
+              "compareValue": "50000000"
+            },
+            {
+              "coverDetailsTitle": "Total permanent disability due to illness, diseases",
+              "coverDetailsDescription": "",
+              "coverDetailsImageLink": "/link/to",
+              "coverDetailsContentList": ["[arg1] VNĐ Max payout/ year"],
+              "coverDetailsContentArgList": ["50000000"],
+              "compareValue": "50000000"
+            },
+            {
+              "coverDetailsTitle": "Death due to accident",
+              "coverDetailsDescription": "",
+              "coverDetailsImageLink": "/link/to",
+              "coverDetailsContentList": ["[arg1] VNĐ Max payout/ year"],
+              "coverDetailsContentArgList": ["50000000"],
+              "compareValue": "50000000"
+            },
+            {
+              "coverDetailsTitle": "Total permanent disability by accident",
+              "coverDetailsDescription": "",
+              "coverDetailsImageLink": "/link/to",
+              "coverDetailsContentList": ["[arg1] VNĐ Max payout/ year"],
+              "coverDetailsContentArgList": ["50000000"],
+              "compareValue": "50000000"
+            },
+            {
+              "coverDetailsTitle": "Partial permanent disability by accident",
+              "coverDetailsDescription": "",
+              "coverDetailsImageLink": "/link/to",
+              "coverDetailsContentList": ["[arg1] VNĐ Max payout/ year"],
+              "coverDetailsContentArgList": ["50000000"],
+              "compareValue": "50000000"
+            },
+            {
+              "coverDetailsTitle": "Temporary injury",
+              "coverDetailsDescription": "",
+              "coverDetailsImageLink": "/link/to",
+              "coverDetailsContentList": [
+                "Payout according to actual cost",
+                "Payout based on % of mobidity table",
+                "Max payout/ year"
+              ],
+              "coverDetailsContentArgList": ["", "", ""],
+              "compareValue": "50000000"
+            },
+            {
+              "coverDetailsTitle": "Inpatient treatment",
+              "coverDetailsDescription": "Payout for actual treatment expense",
+              "coverDetailsImageLink": "/link/to",
+              "coverDetailsContentList": [
+                "Western hospital [arg1] Max payout/day | Maximum 60 days/year",
+                "Eastern hospital [arg1] Max payout/day | Maximum 120 days/year",
+                "Surgery [arg1] Max payout/year"
+              ],
+              "coverDetailsContentArgList": ["250000", "150000", "50000000"],
+              "compareValue": "50000000"
+            },
+            {
+              "coverDetailsTitle": "Outpatient treatment",
+              "coverDetailsDescription": "",
+              "coverDetailsImageLink": "/link/to",
+              "coverDetailsContentList": [
+                "Max [arg1]/treatment",
+                "Max 5 times/year"
+              ],
+              "coverDetailsContentArgList": ["2500000", ""],
+              "compareValue": "2500000"
+            },
+            {
+              "coverDetailsTitle": "Income loss allowance",
+              "coverDetailsDescription": "",
+              "coverDetailsImageLink": "/link/to",
+              "coverDetailsContentList": [
+                "Max 60 days/year",
+                "Payout from 3rd day onward",
+                "Max payout/day"
+              ],
+              "coverDetailsContentArgList": ["", "", ""],
+              "compareValue": "200000"
+            }
+          ]
+        },
+        "exclusionDetails": [
+          {
+            "exclusionDetailsTitle": "Exclusion",
+            "exclusionDetailsDescription": "",
+            "exclusionDetailsImageLink": "/link/to",
+            "exclusionDetailsDocTittle": "View full exclusion information →",
+            "exclusionDetailsDocDescription": "",
+            "exclusionDetailsDocLink": "/link/to",
+            "exclusionDetailsContentList": [
+              "1. Attempt to injure by the Insured or the beneficiary",
+              "2. Any intentional breach of the law, regulation, regulation of local authority or of social associations by the Insured Person. Assault provoked by the Insured Person other than attempt to save human life, property of others or self-defense action...",
+              "3. The Insured is under direct influence of stimulants..."
+            ],
+            "exclusionDetailsContentArgList": ["", "", ""]
+          }
+        ],
+        "waitingPeriod": [
+          {
+            "waitingPeriodTitle": "Waiting period",
+            "waitingPeriodDescription": "Time you must wait before some or all of the coverage comes into effect.",
+            "waitingPeriodImageLink": "/link/to",
+            "list": [
+              {
+                "termTitle": "0 day",
+                "termDescription": "Accident treatment benefit takes effect right after paying the full premium",
+                "termImageLink": "",
+                "coverDetailsContentList": [],
+                "coverDetailsContentArgList": []
+              },
+              {
+                "termTitle": "30 day",
+                "termDescription": "Treatment due to normal illness or disease. Death due to illness, disease, maternity",
+                "termImageLink": "",
+                "coverDetailsContentList": [],
+                "coverDetailsContentArgList": []
+              },
+              {
+                "termTitle": "90 day",
+                "termDescription": "Treatment of complications of pregnancy according to doctor’s prescription",
+                "termImageLink": "",
+                "coverDetailsContentList": [],
+                "coverDetailsContentArgList": []
+              },
+              {
+                "termTitle": "270 day",
+                "termDescription": "Childbirth benefit takes effect",
+                "termImageLink": "",
+                "coverDetailsContentList": [],
+                "coverDetailsContentArgList": []
+              },
+              {
+                "termTitle": "365 day",
+                "termDescription": "Death and treatment due to special and pre-existing health conditions",
+                "termImageLink": "",
+                "coverDetailsContentList": [],
+                "coverDetailsContentArgList": []
+              }
+            ]
+          }
+        ],
+        "planNotice": [
+          {
+            "planNoticeTitle": "Note",
+            "planNoticeDescription": "",
+            "planNoticeImageLink": "",
+            "planNoticeContentList": [
+              "1. For renewal contracts having the same sum insured amount, no waiting period is applied.",
+              "2. For renewal contracts from lower sum insured to higher sum insured, applying 30 day waiting period since the effective date of the renewal contract."
+            ],
+            "planNoticeArgList": []
+          }
+        ],
+        "policyPrinciple": [
+          {
+            "policyPrincipleTitle": "",
+            "policyPrincipleDescription": "",
+            "policyPrincipleImageLink": "",
+            "policyPrincipleDocTittle": "View full Policy Principles",
+            "policyPrincipleDocDescription": "",
+            "policyPrincipleDocLink": "/link/to"
+          }
+        ]
+      }
+    },
+    "shortCategoryDetails": {
+      "vi": {
+        "catTitle": "Bảo hiểm sức khỏe",
+        "catDescription": "Bảo hiểm sức khỏe cho ai lo",
+        "catImageLink": "/link/to"
+      },
+      "en": {
+        "catTitle": "Health Care",
+        "catDescription": "For someone who cares the health",
+        "catImageLink": "/link/to"
+      }
+    },
+    "shortSubCategoryDetails": {
+      "vi": {
+        "subCatTitle": "Bảo hiểm sức khỏe cá nhân",
+        "subCatDescription": "Bảo vệ sức khỏe cho chính bạn",
+        "subCatImageLink": "/link/to"
+      },
+      "en": {
+        "subCatTitle": "Personal Health",
+        "subCatDescription": "Protect your health",
+        "subCatImageLink": "/link/to"
+      }
+    },
+    "shortProductDetails": {
+      "vi": {
+        "productTitle": "Bảo hiểm sức khỏe cá nhân",
+        "productDescription": "Bảo vệ sức khỏe cho chính bạn",
+        "productImageLink": "/link/to"
+      },
+      "en": {
+        "productTitle": "Single Health",
+        "productDescription": "Protect your health",
+        "productImageLink": "/link/to"
+      }
+    }
+  },
+  {
+    "id": "19",
+    "date": "2022-01-08T02:21:28",
+    "isEffective": true,
+    "gender": "male|female",
+    "insurerKey": "BMI",
+    "categoryCode": "LH_MC",
+    "categoryNameEn": "Medical Care",
+    "categoryNameVi": "Chăm Sóc Y Tế",
+    "subCategoryCode": "LH_MC-PH",
+    "subCategoryNameEn": "Personal Medical Care",
+    "subCategoryNameVi": "Chăm Sóc Y Tế cá nhân",
+    "productCode": "LH_MC-PH-SHE",
+    "productId": "LH_MC-PH-101",
+    "productNameEn": "Single Health",
+    "productNameVi": "Chăm Sóc Y Tế cá nhân",
+    "planCode": "LH_MC-PH-SHE-001",
+    "planId": "LH_MC-PH-101-01",
+    "planNameEn": "Basic",
+    "planNameVi": "Cơ bản",
+    "premium": 1085000,
+    "sumInsured": 64500000,
+    "minInsured": "1",
+    "insuredPeriod": "12",
+    "tenor": "30",
+    "paymentMethod": "cash|payoo|fecrc",
+    "tags": "",
+    "firstInstallment": "2",
+    "productRules": [
+      {
+        "ruleId": "age"
+      }
+    ],
+    "claimQuestions": {
+      "vi": [
+        {
+          "id": "LH_MC-PH-101-01_q1",
+          "question": "Người được bảo hiểm có tiền sử hoặc đang mắc bệnh tâm thần, bệnh ung thư, bệnh phong hay không?",
+          "terms": [],
+          "expectedAnswer": "Không",
+          "validAnswers": ["Có", "Không"]
+        },
+        {
+          "id": "LH_MC-PH-101-01_q2",
+          "question": "Người được bảo hiểm có bị thương tật vĩnh viễn từ 50% trở lên hay không?",
+          "terms": [],
+          "expectedAnswer": "Có",
+          "validAnswers": ["Có", "Không"]
+        },
+        {
+          "id": "LH_MC-PH-101-01_q3",
+          "question": "Người được bảo hiểm có đang trong quá trình điều trị bệnh và thương tật hay không?",
+          "terms": [],
+          "expectedAnswer": "Không",
+          "validAnswers": ["Có", "Không"]
+        }
+      ],
+      "en": [
+        {
+          "id": "LH_MC-PH-101-01_q1",
+          "question": "Is the insured suffering from mental illness, cancer, leukemia?",
+          "terms": [],
+          "expectedAnswer": "No",
+          "validAnswers": ["Yes", "No"]
+        },
+        {
+          "id": "LH_MC-PH-101-01_q2",
+          "question": "Is the insured permanently disabled by 50% or more?",
+          "terms": [],
+          "expectedAnswer": "No",
+          "validAnswers": ["Yes", "No"]
+        },
+        {
+          "id": "LH_MC-PH-101-01_q3",
+          "question": "Is the insured in the process of being treated for illness and injury?",
+          "terms": [],
+          "expectedAnswer": "No",
+          "validAnswers": ["Yes", "No"]
+        }
+      ]
+    },
+    "shortPlanDetails": {
+      "vi": {
+        "catTitle": null,
+        "catDescription": null,
+        "catImageLink": null,
+        "subCatTitle": null,
+        "subCatDescription": null,
+        "subCatImageLink": null,
+        "productTitle": null,
+        "productDescription": null,
+        "productImageLink": null,
+        "planDetailsTitle": "Cơ bản",
+        "planDetailsImageLink": "/link/to",
+        "planDetailsDescription": "Cơ bảnplanDetailsDescription",
+        "shortDetailsHeaderList": [
+          "Phí bảo hiểm",
+          "Giá trị bảo vệ",
+          "Tử vong",
+          "Thương tật",
+          "Điều trị nội trú"
+        ],
+        "shortDetailsContentList": [
+          "[arg1] VNĐ",
+          "[arg1] VNĐ",
+          "[arg1] VNĐ",
+          " Upto [arg1] VNĐ",
+          "Tây phương [arg1] VNĐ/day | Đông phương [arg2] VNĐ/day",
+          "[arg1] VNĐ/visit",
+          "[arg1] VNĐ/day"
+        ],
+        "shortDetailsContentArgList": [
+          "1085000",
+          "64500000",
+          "50000000",
+          "50000000",
+          "250000|150000",
+          "2500000",
+          "200000"
+        ]
+      },
+      "en": {
+        "catTitle": null,
+        "catDescription": null,
+        "catImageLink": null,
+        "subCatTitle": null,
+        "subCatDescription": null,
+        "subCatImageLink": null,
+        "productTitle": null,
+        "productDescription": null,
+        "productImageLink": null,
+        "planDetailsTitle": "Basic",
+        "planDetailsImageLink": "/link/to",
+        "planDetailsDescription": "BasicplanDetailsDescription",
+        "shortDetailsHeaderList": [
+          "Premium fee",
+          "Sum insured",
+          "Death",
+          "Disability",
+          "Inpatient"
+        ],
+        "shortDetailsContentList": [
+          "[arg1] VNĐ",
+          "[arg1] VNĐ",
+          "[arg1] VNĐ",
+          " Upto [arg1] VNĐ",
+          "Western [arg1] VNĐ/day | Eastern [arg2] VNĐ/day"
+        ],
+        "shortDetailsContentArgList": [
+          "1085000",
+          "64500000",
+          "50000000",
+          "50000000",
+          "250000|150000"
+        ]
+      }
+    },
+    "planDetails": {
+      "vi": {
+        "catTitle": null,
+        "catDescription": null,
+        "catImageLink": null,
+        "subCatTitle": null,
+        "subCatDescription": null,
+        "subCatImageLink": null,
+        "productTitle": null,
+        "productDescription": null,
+        "productImageLink": null,
+        "planDetailsTitle": "Cơ bản",
+        "planDetailsImageLink": "/link/to",
+        "planDetailsDescription": "Cơ bảnplanDetailsDescription",
+        "whatIncluded": {
+          "whatIncludedTittle": "Quyền lợi bảo hiểm",
+          "whatIncludedDescription": "",
+          "whatIncludedImageLInk": "",
+          "list": [
+            {
+              "coverDetailsTitle": "Tử vong do ốm đau, bệnh tật, thai sản",
+              "coverDetailsDescription": "",
+              "coverDetailsImageLink": "/link/to",
+              "coverDetailsContentList": ["[arg1] Tối đa chi trả/ năm"],
+              "coverDetailsContentArgList": ["50000000"],
+              "compareValue": "50000000"
+            },
+            {
+              "coverDetailsTitle": "Thương tật toàn bộ vĩnh viễn do ốm đau, bệnh tật",
+              "coverDetailsDescription": "",
+              "coverDetailsImageLink": "/link/to",
+              "coverDetailsContentList": ["[arg1] Tối đa chi trả/ năm"],
+              "coverDetailsContentArgList": ["50000000"],
+              "compareValue": "50000000"
+            },
+            {
+              "coverDetailsTitle": "Tử vong do tai nạn",
+              "coverDetailsDescription": "",
+              "coverDetailsImageLink": "/link/to",
+              "coverDetailsContentList": ["[arg1] Tối đa chi trả/ năm"],
+              "coverDetailsContentArgList": ["50000000"],
+              "compareValue": "50000000"
+            },
+            {
+              "coverDetailsTitle": "Thương tật toàn bộ vĩnh viễn do tai nạn",
+              "coverDetailsDescription": "",
+              "coverDetailsImageLink": "/link/to",
+              "coverDetailsContentList": ["[arg1] Tối đa chi trả/ năm"],
+              "coverDetailsContentArgList": ["50000000"],
+              "compareValue": "50000000"
+            },
+            {
+              "coverDetailsTitle": "Thương tật bộ phận vĩnh viễn do tai nạn",
+              "coverDetailsDescription": "",
+              "coverDetailsImageLink": "/link/to",
+              "coverDetailsContentList": ["[arg1] Tối đa chi trả/ năm"],
+              "coverDetailsContentArgList": ["50000000"],
+              "compareValue": "50000000"
+            },
+            {
+              "coverDetailsTitle": "Thương tật tạm thời do tai nạn",
+              "coverDetailsDescription": "",
+              "coverDetailsImageLink": "/link/to",
+              "coverDetailsContentList": [
+                "Chi trả theo chi phí thực tế",
+                "Tối đa theo % bảng tỉ lệ thương tật",
+                "Tối đa chi trả/ năm"
+              ],
+              "coverDetailsContentArgList": ["", "", ""],
+              "compareValue": "50000000"
+            },
+            {
+              "coverDetailsTitle": "Điều trị nội trú",
+              "coverDetailsDescription": "Chi trả theo chi phí thực tế",
+              "coverDetailsImageLink": "/link/to",
+              "coverDetailsContentList": [
+                "Nằm viện Tây Y [arg1] Giới hạn chi trả/ ngày |  Tối đa 60 ngày/năm",
+                "Nằm viện Đông Y [arg1] Giới hạn chi trả/ ngày |  Tối đa 120 ngày/năm",
+                "Phẫu thuật [arg1] Tối đa chi trả/ năm"
+              ],
+              "coverDetailsContentArgList": ["250000", "150000", "50000000"],
+              "compareValue": "50000000"
+            }
+          ]
+        },
+        "exclusionDetails": [
+          {
+            "exclusionDetailsTitle": "Điều khoản loại trừ",
+            "exclusionDetailsDescription": "",
+            "exclusionDetailsImageLink": "/link/to",
+            "exclusionDetailsDocTittle": "View full exclusion information →",
+            "exclusionDetailsDocDescription": "",
+            "exclusionDetailsDocLink": "/link/to",
+            "exclusionDetailsContentList": [
+              "1. Hành động cố ý gây thiệt hại của người được bảo hiểm (NĐBH) hoặc người thừa kế hợp pháp của NĐBH.",
+              "2. NĐBH cố ý vi phạm pháp luật, nội quy, quy định của chính quyền địa phương hoặc các tổ chức xã hội. Và bất kỳ hành động cố ý phạm pháp hoặc ẩu đả của NĐBH, trừ khi là hành động cứu người, bảo vệ tài sản hoặc tự vệ.",
+              "3. NĐBH bị tác động bởi chất kích thích, chất gây nghiện, thuốc cai nghiện, thuốc không được bác sĩ...."
+            ],
+            "exclusionDetailsContentArgList": ["", "", ""]
+          }
+        ],
+        "waitingPeriod": [
+          {
+            "waitingPeriodTitle": "Thời gian chờ",
+            "waitingPeriodDescription": "Thời gian chờ Thời gian từ lúc ký hợp đồng đến khi các quyền lợi bảo hiểm có hiệu lực",
+            "waitingPeriodImageLink": "/link/to",
+            "list": [
+              {
+                "termTitle": "0 ngày",
+                "termDescription": "Tai nạn",
+                "termImageLink": "",
+                "coverDetailsContentList": [],
+                "coverDetailsContentArgList": []
+              },
+              {
+                "termTitle": "30 ngày",
+                "termDescription": "Điều trị do ốm đau, bệnh tật thông thường",
+                "termImageLink": "",
+                "coverDetailsContentList": [],
+                "coverDetailsContentArgList": []
+              },
+              {
+                "termTitle": "90 ngày",
+                "termDescription": "Điều trị biến chứng thai sản",
+                "termImageLink": "",
+                "coverDetailsContentList": [],
+                "coverDetailsContentArgList": []
+              },
+              {
+                "termTitle": "270 ngày",
+                "termDescription": "Sinh đẻ",
+                "termImageLink": "",
+                "coverDetailsContentList": [],
+                "coverDetailsContentArgList": []
+              },
+              {
+                "termTitle": "365 ngày",
+                "termDescription": "Tử vong và điều trị do bệnh đặc biệt và bệnh có sẵn",
+                "termImageLink": "",
+                "coverDetailsContentList": [],
+                "coverDetailsContentArgList": []
+              }
+            ]
+          }
+        ],
+        "planNotice": [
+          {
+            "planNoticeTitle": "Lưu ý",
+            "planNoticeDescription": "",
+            "planNoticeImageLink": "",
+            "planNoticeContentList": [
+              "1. Đối với hợp đồng tái tục cùng hạn mức với hợp đồng trước đó, không áp dụng thời gian chờ.",
+              "2. Đối với Hợp đồng tái tục từ gói thấp sang gói cao áp dụng thời gian chờ là 30 ngày kể từ ngày Hợp đồng tái tục có hiệu lực."
+            ],
+            "planNoticeArgList": ["", ""]
+          }
+        ],
+        "policyPrinciple": [
+          {
+            "policyPrincipleTitle": "",
+            "policyPrincipleDescription": "",
+            "policyPrincipleImageLink": "",
+            "policyPrincipleDocTittle": "View full Policy Principles",
+            "policyPrincipleDocDescription": "",
+            "policyPrincipleDocLink": "/link/to"
+          }
+        ]
+      },
+      "en": {
+        "catTitle": null,
+        "catDescription": null,
+        "catImageLink": null,
+        "subCatTitle": null,
+        "subCatDescription": null,
+        "subCatImageLink": null,
+        "productTitle": null,
+        "productDescription": null,
+        "productImageLink": null,
+        "planDetailsTitle": "Basic",
+        "planDetailsImageLink": "/link/to",
+        "planDetailsDescription": "BasicplanDetailsDescription",
+        "whatIncluded": {
+          "whatIncludedTittle": "What’s included",
+          "whatIncludedDescription": "",
+          "whatIncludedImageLInk": "",
+          "list": [
+            {
+              "coverDetailsTitle": "Death due to illness, diseases, maternity",
+              "coverDetailsDescription": "",
+              "coverDetailsImageLink": "/link/to",
+              "coverDetailsContentList": ["[arg1] VNĐ Max payout/ year"],
+              "coverDetailsContentArgList": ["50000000"],
+              "compareValue": "50000000"
+            },
+            {
+              "coverDetailsTitle": "Total permanent disability due to illness, diseases",
+              "coverDetailsDescription": "",
+              "coverDetailsImageLink": "/link/to",
+              "coverDetailsContentList": ["[arg1] VNĐ Max payout/ year"],
+              "coverDetailsContentArgList": ["50000000"],
+              "compareValue": "50000000"
+            },
+            {
+              "coverDetailsTitle": "Death due to accident",
+              "coverDetailsDescription": "",
+              "coverDetailsImageLink": "/link/to",
+              "coverDetailsContentList": ["[arg1] VNĐ Max payout/ year"],
+              "coverDetailsContentArgList": ["50000000"],
+              "compareValue": "50000000"
+            },
+            {
+              "coverDetailsTitle": "Total permanent disability by accident",
+              "coverDetailsDescription": "",
+              "coverDetailsImageLink": "/link/to",
+              "coverDetailsContentList": ["[arg1] VNĐ Max payout/ year"],
+              "coverDetailsContentArgList": ["50000000"],
+              "compareValue": "50000000"
+            },
+            {
+              "coverDetailsTitle": "Partial permanent disability by accident",
+              "coverDetailsDescription": "",
+              "coverDetailsImageLink": "/link/to",
+              "coverDetailsContentList": ["[arg1] VNĐ Max payout/ year"],
+              "coverDetailsContentArgList": ["50000000"],
+              "compareValue": "50000000"
+            },
+            {
+              "coverDetailsTitle": "Temporary injury",
+              "coverDetailsDescription": "",
+              "coverDetailsImageLink": "/link/to",
+              "coverDetailsContentList": [
+                "Payout according to actual cost",
+                "Payout based on % of mobidity table",
+                "Max payout/ year"
+              ],
+              "coverDetailsContentArgList": ["", "", ""],
+              "compareValue": "50000000"
+            },
+            {
+              "coverDetailsTitle": "Inpatient treatment",
+              "coverDetailsDescription": "Payout for actual treatment expense",
+              "coverDetailsImageLink": "/link/to",
+              "coverDetailsContentList": [
+                "Western hospital [arg1] Max payout/day | Maximum 60 days/year",
+                "Eastern hospital [arg1] Max payout/day | Maximum 120 days/year",
+                "Surgery [arg1] Max payout/year"
+              ],
+              "coverDetailsContentArgList": ["250000", "150000", "50000000"],
+              "compareValue": "50000000"
+            }
+          ]
+        },
+        "exclusionDetails": [
+          {
+            "exclusionDetailsTitle": "Exclusion",
+            "exclusionDetailsDescription": "",
+            "exclusionDetailsImageLink": "/link/to",
+            "exclusionDetailsDocTittle": "View full exclusion information →",
+            "exclusionDetailsDocDescription": "",
+            "exclusionDetailsDocLink": "/link/to",
+            "exclusionDetailsContentList": [
+              "1. Attempt to injure by the Insured or the beneficiary",
+              "2. Any intentional breach of the law, regulation, regulation of local authority or of social associations by the Insured Person. Assault provoked by the Insured Person other than attempt to save human life, property of others or self-defense action...",
+              "3. The Insured is under direct influence of stimulants..."
+            ],
+            "exclusionDetailsContentArgList": ["", "", ""]
+          }
+        ],
+        "waitingPeriod": [
+          {
+            "waitingPeriodTitle": "Waiting period",
+            "waitingPeriodDescription": "Time you must wait before some or all of the coverage comes into effect.",
+            "waitingPeriodImageLink": "/link/to",
+            "list": [
+              {
+                "termTitle": "0 day",
+                "termDescription": "Accident treatment benefit takes effect right after paying the full premium",
+                "termImageLink": "",
+                "coverDetailsContentList": [],
+                "coverDetailsContentArgList": []
+              },
+              {
+                "termTitle": "30 day",
+                "termDescription": "Treatment due to normal illness or disease. Death due to illness, disease, maternity",
+                "termImageLink": "",
+                "coverDetailsContentList": [],
+                "coverDetailsContentArgList": []
+              },
+              {
+                "termTitle": "90 day",
+                "termDescription": "Treatment of complications of pregnancy according to doctor’s prescription",
+                "termImageLink": "",
+                "coverDetailsContentList": [],
+                "coverDetailsContentArgList": []
+              },
+              {
+                "termTitle": "270 day",
+                "termDescription": "Childbirth benefit takes effect",
+                "termImageLink": "",
+                "coverDetailsContentList": [],
+                "coverDetailsContentArgList": []
+              },
+              {
+                "termTitle": "365 day",
+                "termDescription": "Death and treatment due to special and pre-existing health conditions",
+                "termImageLink": "",
+                "coverDetailsContentList": [],
+                "coverDetailsContentArgList": []
+              }
+            ]
+          }
+        ],
+        "planNotice": [
+          {
+            "planNoticeTitle": "Note",
+            "planNoticeDescription": "",
+            "planNoticeImageLink": "",
+            "planNoticeContentList": [
+              "1. For renewal contracts having the same sum insured amount, no waiting period is applied.",
+              "2. For renewal contracts from lower sum insured to higher sum insured, applying 30 day waiting period since the effective date of the renewal contract."
+            ],
+            "planNoticeArgList": []
+          }
+        ],
+        "policyPrinciple": [
+          {
+            "policyPrincipleTitle": "",
+            "policyPrincipleDescription": "",
+            "policyPrincipleImageLink": "",
+            "policyPrincipleDocTittle": "View full Policy Principles",
+            "policyPrincipleDocDescription": "",
+            "policyPrincipleDocLink": "/link/to"
+          }
+        ]
+      }
+    },
+    "shortCategoryDetails": {
+      "vi": {
+        "catTitle": "Bảo hiểm sức khỏe",
+        "catDescription": "Bảo hiểm sức khỏe cho ai lo",
+        "catImageLink": "/link/to"
+      },
+      "en": {
+        "catTitle": "Health Care",
+        "catDescription": "For someone who cares the health",
+        "catImageLink": "/link/to"
+      }
+    },
+    "shortSubCategoryDetails": {
+      "vi": {
+        "subCatTitle": "Bảo hiểm sức khỏe cá nhân",
+        "subCatDescription": "Bảo vệ sức khỏe cho chính bạn",
+        "subCatImageLink": "/link/to"
+      },
+      "en": {
+        "subCatTitle": "Personal Health",
+        "subCatDescription": "Protect your health",
+        "subCatImageLink": "/link/to"
+      }
+    },
+    "shortProductDetails": {
+      "vi": {
+        "productTitle": "Bảo hiểm sức khỏe cá nhân",
+        "productDescription": "Bảo vệ sức khỏe cho chính bạn",
+        "productImageLink": "/link/to"
+      },
+      "en": {
+        "productTitle": "Single Health",
+        "productDescription": "Protect your health",
+        "productImageLink": "/link/to"
+      }
+    }
+  }
+]
