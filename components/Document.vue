@@ -19,7 +19,6 @@ export default {
   },
   setup(props: any) {
     const { list } = props
-    return { list }
   }
 }
 </script>

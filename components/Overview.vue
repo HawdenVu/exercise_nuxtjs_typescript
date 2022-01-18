@@ -3,8 +3,8 @@
     <v-row>
       <img class="logo" src="/v.png">
       <div class="brand">
-        <h1>Single Health</h1>
-        <b>Basic</b>
+        <h1>{{ productName }}</h1>
+        <b>{{ productType }}</b>
       </div>
     </v-row>
     <p class="note">Our Basic plan gives you standard protection and is great to get started with.</p>
@@ -53,6 +53,14 @@
 export default {
   name: 'Overview',
   props: {
+    productName: {
+      type: String,
+      default: "."
+    },
+    productType: {
+      type: String,
+      default: "."
+    },
     insurer: {
       type: String,
       default: "Bao Minh"
@@ -71,8 +79,7 @@ export default {
     },
   },
   setup (props: any) {
-    const { insurer, premium, sumInsured, insuredPeriod } = props
-    return { premium, sumInsured, insuredPeriod }
+    const { insurer, premium, sumInsured, insuredPeriod, productName, productType } = props
   }
 }
 </script>

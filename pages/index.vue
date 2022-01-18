@@ -1,19 +1,41 @@
 <template>
   <div>
-    <overview
-      :premium="data ? data.premium : 0"
-      :sumInsured="data ? data.sumInsured : 0"
-      :insuredPeriod="data ? Number(data.insuredPeriod) : 0"
-    />
-    <div class="spacer" />
-    <WhatsIncluded :list="data ? data.planDetails.en.whatIncluded.list : []" />
-    <Document :list="data ? data.planDetails.en.exclusionDetails : []" />
-    <Comparison
-      :nameTarget="data ? data.productNameEn : name "
-      :compareName="data ? data.productNameEn : name "
-      :list="data ? data.planDetails.en.whatIncluded.list : []"
-      :compareTarget="compareTarget ? compareTarget.planDetails.en.whatIncluded.list : []"
-    />
+    <v-app-bar>
+      <v-spacer></v-spacer>
+      <v-btn text @click="ChangeLang">
+        {{ isVI ? "Tiếng Anh" : "Vietnamese"}}
+      </v-btn>
+    </v-app-bar>
+    <v-spacer />
+    <div v-if="!isOpenCompare">
+      <v-card class="product-card" color="#FEEFE9" v-for="(item, index) in data" :key="index">
+        <v-card-title class="text-h5">
+          {{ isVI ? item.productNameVi : item.productNameEn }}
+        </v-card-title>
+        <v-card-subtitle>{{ item.premium.toLocaleString('vi-VN') }}đ</v-card-subtitle>
+        <v-card-actions>
+          <v-btn text @click="GotoDetail(item.id)">
+            {{ isVI ? "Xem thêm..." : "Learn more..." }}
+          </v-btn>
+          <v-spacer />
+          <v-btn text @click="addToCompareList(item)" v-if="!isExistInCompareList(item)">
+            {{ isVI ? 'So sánh' : 'Compare' }}
+          </v-btn>
+        </v-card-actions>
+      </v-card>
+    </div>
+    <div v-else>
+      <v-btn @click="onCloseCompare"><h3>{{ isVI ? "< LIST" : "< DANH SÁCH"}}</h3></v-btn>
+      <Comparison
+        :idTarget="compareList[0].id"
+        :compareId="compareList[1].id"
+        :nameTarget="isVI ? compareList[0].productNameVi : compareList[0].productNameEn"
+        :compareName="isVI ? compareList[1].productNameVi : compareList[1].productNameEn"
+        :list="compareList[0].planDetails.en.whatIncluded.list"
+        :compareTarget="compareList[1].planDetails.en.whatIncluded.list"
+        :isVI="isVI"
+      />
+    </div>
   </div>
 </template>
 
@@ -24,6 +46,7 @@ import {
   ref
 } from '@nuxtjs/composition-api'
 import axios from 'axios'
+import { useChangeLanguage } from '../hook'
 
 export default defineComponent({
   layout: 'phone',
@@ -33,17 +56,46 @@ export default defineComponent({
     }
   },
   setup() {
+    const { isVI, ChangeLang, initLang } = useChangeLanguage();
+    initLang()
+
     const data: any = ref(null)
-    const compareTarget: any = ref(null)
 
     useFetch(async () => {
-      const response = await axios.get('http://localhost:3000/data/data.json')
+      data.value = await axios.get('http://localhost:3000/data/data.json')
       .then(res => res.data);
-      data.value = response[0]
-      compareTarget.value = response[1]
     })
 
-    return { data, compareTarget }
+    const compareList = ref([]);
+    const isOpenCompare = ref(false)
+
+    function addToCompareList(target: any): void {
+      compareList.value.push(target);
+      if (compareList.value.length >= 2) {
+        isOpenCompare.value = true
+      }
+    }
+
+    function isExistInCompareList(target: any): Boolean {
+      const existItem = compareList.value.find((item: any) => item.id === target.id);
+      if (existItem && existItem !== undefined) {
+        return true
+      } else {
+        return false
+      }
+    }
+
+    function onCloseCompare() {
+      isOpenCompare.value = false;
+      compareList.value.length = 0;
+    }
+
+    return { data, isVI, ChangeLang, addToCompareList, compareList, isExistInCompareList, isOpenCompare, onCloseCompare }
+  },
+  methods: {
+    GotoDetail(id: string): void {
+      this.$router.push(`/detail?id=${id}`)
+    }
   },
 })
 </script>
@@ -51,5 +103,8 @@ export default defineComponent({
 <style scoped>
   .spacer {
     height: 20px;
+  }
+  .product-card {
+    margin-bottom: 10px;
   }
 </style>

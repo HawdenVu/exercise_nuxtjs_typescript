@@ -65,11 +65,6 @@ export default {
     }
 
     return {
-      coverDetailsImageLink,
-      coverDetailsTitle,
-      compareValue,
-      coverDetailsContentList,
-      coverDetailsContentArgList,
       replaceArg,
     }
   }

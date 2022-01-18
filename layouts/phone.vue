@@ -1,12 +1,14 @@
 <template>
   <div class="phone">
-    <Nuxt />
+    <div class="container">
+      <Nuxt />
+    </div>
   </div>
 </template>
 
 <script lang="ts">
 export default {
-    
+  setup() {},
 }
 </script>
 
@@ -18,8 +20,10 @@ export default {
     border-radius: 10px;
     border: 1px solid #c4c4c4;
     box-shadow: 0px 0px 25px 0px #868686;
-    padding: 20px;
-    padding-top: 40px;
     font-family: 'Nunito', sans-serif;
+  }
+  .container {
+    padding: 20px;
+    padding-top: 20px;
   }
 </style>

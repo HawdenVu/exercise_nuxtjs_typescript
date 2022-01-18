@@ -1,7 +1,12 @@
 <template>
   <div>
     <h1 class="title">What's included</h1>
-    <div v-for="(item, index) in list" :key="index">
+    <v-text-field
+      :placeholder="isVI ? 'tìm kiếm...' : 'search...'"
+      :model="searchValue"
+      @keyup="OnSearch"
+    />
+    <div v-for="(item, index) in filtersList" :key="index">
       <IncludedItem
         :coverDetailsTitle="item.coverDetailsTitle"
         :compareValue="item.compareValue"
@@ -13,16 +18,36 @@
 </template>
 
 <script lang="ts">
+import { watch, ref, watchEffect } from '@nuxtjs/composition-api'
 export default {
   props: {
     list: {
       type: Array,
       default: []
+    },
+    isVI: {
+      type: Boolean,
+      default: false
     }
   },
-  setup(props: any) {
-    const { list } = props;
-    return { list }
+  data() {
+    return {
+      filtersList: this.list,
+      searchValue: "",
+    }
+  },
+  methods: {
+    OnSearch(event: any): void {
+      this.searchValue = event.target.value
+    }
+  },
+  watch: {
+    searchValue: function (value: String): void {
+      this.filtersList = this.list.filter((item: any) => item.coverDetailsTitle.toLowerCase().includes(value.toLowerCase()))
+    },
+    list: function (): void {
+      this.filtersList = this.list
+    },
   }
 }
 </script>
