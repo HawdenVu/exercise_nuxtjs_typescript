@@ -14,7 +14,7 @@
         </v-card-title>
         <v-card-subtitle>{{ item.premium.toLocaleString('vi-VN') }}đ</v-card-subtitle>
         <v-card-actions>
-          <v-btn text @click="GotoDetail(item.id)">
+          <v-btn text @click="$router.push(`/detail?id=${item.id}`)">
             {{ isVI ? "Xem thêm..." : "Learn more..." }}
           </v-btn>
           <v-spacer />
@@ -50,11 +50,6 @@ import { useChangeLanguage } from '../hook'
 
 export default defineComponent({
   layout: 'phone',
-  data() {
-    return {
-      name: "",
-    }
-  },
   setup() {
     const { isVI, ChangeLang, initLang } = useChangeLanguage();
     initLang()
@@ -62,7 +57,7 @@ export default defineComponent({
     const data: any = ref(null)
 
     useFetch(async () => {
-      data.value = await axios.get('http://localhost:3000/data/data.json')
+      data.value = await axios.get('/data/data.json')
       .then(res => res.data);
     })
 
@@ -85,17 +80,12 @@ export default defineComponent({
       }
     }
 
-    function onCloseCompare() {
+    function onCloseCompare(): void {
       isOpenCompare.value = false;
       compareList.value.length = 0;
     }
 
     return { data, isVI, ChangeLang, addToCompareList, compareList, isExistInCompareList, isOpenCompare, onCloseCompare }
-  },
-  methods: {
-    GotoDetail(id: string): void {
-      this.$router.push(`/detail?id=${id}`)
-    }
   },
 })
 </script>

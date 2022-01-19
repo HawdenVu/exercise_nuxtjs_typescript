@@ -135,9 +135,8 @@ export default {
   },
   setup(props: any) {
     const { list, compareTarget } = props
-  },
-  methods: {
-    searchCompareValue(target: any, titleSearch: String): any {
+
+    function searchCompareValue(target: any, titleSearch: String): any {
       const data = target.find((item: any) => item.coverDetailsTitle === titleSearch)
       if (data && data !== undefined) {
         return Number(data.compareValue).toLocaleString('vi-VN')
@@ -145,7 +144,9 @@ export default {
         return null
       }
     }
-  }
+
+    return { searchCompareValue }
+  },
 }
 </script>
 

@@ -30,29 +30,49 @@ export default {
       default: false
     }
   },
-  data(): any {
-    const self: any = this;
-    return {
-      filtersList: self.list,
-      searchValue: "",
+  setup(props: any) {
+    const { list, isVI } = props
+
+    const filtersList = ref(list)
+    const searchValue = ref("")
+    
+    function OnSearch(event: any): void {
+      searchValue.value = event.target.value
     }
+    
+    watch(searchValue, (value: String) => {
+      filtersList.value = props.list.filter((item: any) => item.coverDetailsTitle.toLowerCase().includes(value.toLowerCase()))
+    })
+
+    watch(() => props.list, (value) => {
+      filtersList.value = value
+    })
+
+    return { filtersList, searchValue, OnSearch }
   },
-  methods: {
-    OnSearch(event: any): void {
-      const self: any = this;
-      self.searchValue = event.target.value
-    }
-  },
-  watch: {
-    searchValue: function (value: String): void {
-      const self: any = this;
-      self.filtersList = self.list.filter((item: any) => item.coverDetailsTitle.toLowerCase().includes(value.toLowerCase()))
-    },
-    list: function (): void {
-      const self: any = this;
-      self.filtersList = this.list
-    },
-  }
+  // data(): any {
+  //   const self: any = this;
+  //   return {
+  //     filtersList: self.list,
+  //     searchValue: "",
+  //   }
+  // },
+  // methods: {
+  //   OnSearch(event: any): void {
+  //     const self: any = this;
+  //     self.searchValue = event.target.value
+  //   }
+  // },
+  // watch: {
+  //   searchValue: function (value: String): void {
+  //     const self: any = this;
+  //     self.filtersList = self.list.filter((item: any) => item.coverDetailsTitle.toLowerCase().includes(value.toLowerCase()))
+  //   },
+  //   list: function (): void {
+  //     const self: any = this;
+  //     self.filtersList = this.list
+  //   },
+  // }
 }
 </script>
 

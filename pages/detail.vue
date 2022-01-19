@@ -40,7 +40,7 @@ export default {
   async asyncData(Context: any) {
     const { id } = Context.query;
     const response = await axios
-      .get(`http://localhost:3000/data/data.json`)
+      .get(`/data/data.json`)
       .then(res => res.data);
     const data = response.find((item: any) => item.id === id)
     return { data };
