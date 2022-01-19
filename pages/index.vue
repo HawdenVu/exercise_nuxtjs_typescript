@@ -25,7 +25,7 @@
       </v-card>
     </div>
     <div v-else>
-      <v-btn @click="onCloseCompare"><h3>{{ isVI ? "< LIST" : "< DANH SÁCH"}}</h3></v-btn>
+      <v-btn @click="onCloseCompare"><h3>{{ isVI ? "TRỞ VỀ DANH SÁCH" : "BACK TO LIST" }}</h3></v-btn>
       <Comparison
         :idTarget="compareList[0].id"
         :compareId="compareList[1].id"
@@ -69,7 +69,7 @@ export default defineComponent({
     const compareList = ref([]);
     const isOpenCompare = ref(false)
 
-    function addToCompareList(target: any): void {
+    function addToCompareList(target: never): void {
       compareList.value.push(target);
       if (compareList.value.length >= 2) {
         isOpenCompare.value = true

@@ -30,23 +30,27 @@ export default {
       default: false
     }
   },
-  data() {
+  data(): any {
+    const self: any = this;
     return {
-      filtersList: this.list,
+      filtersList: self.list,
       searchValue: "",
     }
   },
   methods: {
     OnSearch(event: any): void {
-      this.searchValue = event.target.value
+      const self: any = this;
+      self.searchValue = event.target.value
     }
   },
   watch: {
     searchValue: function (value: String): void {
-      this.filtersList = this.list.filter((item: any) => item.coverDetailsTitle.toLowerCase().includes(value.toLowerCase()))
+      const self: any = this;
+      self.filtersList = self.list.filter((item: any) => item.coverDetailsTitle.toLowerCase().includes(value.toLowerCase()))
     },
     list: function (): void {
-      this.filtersList = this.list
+      const self: any = this;
+      self.filtersList = this.list
     },
   }
 }
